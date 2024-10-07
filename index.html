@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="part">user name:</label>
+    <input type="text" id="part" name="user"/><br><br>
+    <label for="part1">Password:</label>
+    <input type="password" id="part1" name="user"/><br><br>
+    <input type="submit" id="submit">
+    <script>
+        let x=document.getElementById("part")
+        let y=document.getElementById("part1")
+        let z=document.getElementById("submit")
+        z.addEventListener("click",()=>{
+            localStorage.setItem("Name",part.value)
+            sessionStorage.setItem("password",part1.value)
+        })
+       
+           
+    </script>
+
+    
+</body>
+</html>
